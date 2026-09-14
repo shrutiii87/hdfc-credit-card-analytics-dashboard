@@ -35,7 +35,7 @@
 <text x="62" y="78" font-family="Arial,sans-serif" font-size="13" letter-spacing="3" fill="#60a5fa" font-weight="700">HDFC BANK</text>
 <text x="62" y="112" font-family="Arial,sans-serif" font-size="38" font-weight="800" fill="#f8fafc">Credit Card</text>
 <text x="62" y="151" font-family="Arial,sans-serif" font-size="38" font-weight="800" fill="url(#cyan)">Analytics Dashboard</text>
-<text x="64" y="184" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#94a3b8">Power BI Project</text>
+<text x="64" y="184" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#94a3b8">Power BI Project 💳📊</text>
 <text x="64" y="205" font-family="Arial,sans-serif" font-size="13" fill="#64748b">End-to-end spend, revenue &amp; customer insights</text>
 
 <g transform="translate(62 242)">
@@ -126,21 +126,6 @@
   <g transform="translate(997 272)">
     <rect width="95" height="28" rx="14" fill="#1e1b4b" stroke="#a78bfa"/><text x="47" y="18" text-anchor="middle" fill="#c4b5fd">CUSTOMERS</text>
     <animateTransform attributeName="transform" type="translate" values="997 272;997 265;997 272" dur="2.8s" repeatCount="indefinite"/>
-  </g>
-</g>
-
-<path d="M0 365H1200" stroke="#020b1a" stroke-width="42"/>
-<path d="M0 365H1200" stroke="#1e3a5f" stroke-width="1.5" stroke-dasharray="44 32">
-  <animate attributeName="stroke-dashoffset" values="0;-76" dur="1s" repeatCount="indefinite"/>
-</path>
-
-<g>
-  <g transform="translate(-150 336)">
-    <rect width="96" height="26" rx="7" fill="#e0e7ff" stroke="#60a5fa"/>
-    <rect x="8" y="7" width="16" height="12" rx="2" fill="#fbbf24"/>
-    <rect x="30" y="9" width="40" height="3" rx="1.5" fill="#1e3a8a" opacity=".6"/>
-    <rect x="30" y="14" width="25" height="3" rx="1.5" fill="#1e3a8a" opacity=".4"/>
-    <animateTransform attributeName="transform" type="translate" values="-150 336;1250 336" dur="7s" repeatCount="indefinite"/>
   </g>
 </g>
 
