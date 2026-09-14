@@ -1,30 +1,5 @@
 # HDFC Bank Credit Card Analytics Dashboard | Power BI Project 💳📊
 
-![HDFC Bank](https://img.shields.io/badge/HDFC%20BANK-Credit%20Card%20Analytics-004C8F?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTEyIDJMNi41IDguNWgxM0wxMiAyWiIvPjwvc3ZnPg==)
-![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Measures-blue?style=for-the-badge)
-![Power Query](https://img.shields.io/badge/Power%20Query-ETL-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
-
----
-
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Video Walkthrough](#-video-walkthrough)
-- [Business Problem & Objective](#-business-problem--objective)
-- [Dataset Details](#-dataset-details)
-- [Dashboard Pages Deep Dive](#-dashboard-pages-deep-dive---from-video)
-- [Design & UI - GitHub Template](#-design--ui---github-template)
-- [DAX Measures Used](#-dax-measures-used)
-- [Key Insights From Video](#-key-insights-from-video)
-- [Tools & Technologies](#️-tools--technologies)
-- [Project Structure](#-project-structure)
-- [How to Run This Project](#-how-to-run-this-project)
-- [Screenshots](#-screenshots)
-- [Future Improvements](#-future-improvements)
-- [Author & Connect](#-author--connect)
-
 ---
 
 ## 📌 Overview
@@ -36,39 +11,6 @@ This is not a static dashboard. As you can see in the attached video `video_HDFC
 The dashboard uses a **custom HDFC-themed background template** hosted on GitHub (`/assets` folder) to give it a professional banking look - light blue gradient, clean cards, HDFC logo, and illustrated characters.
 
 This project is ideal for showcasing skills for **Data Analyst, Business Analyst, and Power BI Developer** roles in Banking and Finance domain.
-
----
-
-## 🎬 Video Walkthrough
-
-**File:** `video_HDFC_working.mp4` (1432805322067695)
-
-The video shows 3 pages and live filtering:
-
-1.  **0:00 - 14:00 sec - EXECUTIVE OVERVIEW:** You can see mouse hovering and selecting filters from the right-side filter pane. 
-    - At 0:01, selects Gender, then CardType = Diners Black, Gold, Infinia etc. 
-    - At 0:03, KPIs update from 6M / 500 Transactions to 3M / 263 Transactions.
-    - At 0:06, selects City = Pune, Mumbai etc. and Total Spend drops to 626K / 50 Transactions.
-    - At 0:09, selects Year = 2024, 2025, tooltip shows "2024 February Total Spend 1,23,456" etc.
-    - Shows Area Chart animations and Donut chart for Payment Status (Due, Paid, Overdue).
-
-2.  **14:00 - 39:00 sec - CUSTOMER & CARD ANALYTICS:**
-    - Shows Pie chart for Spend by Gender, Treemap for Total Spend by CardType (Millennia is biggest block).
-    - Hover shows tooltip: "Gender Male Total Spend 3,244,673 (52.72%)", "City Bengaluru Age 36-45 Total Spend 250,20" etc.
-    - Left side slicers: TransactionCategory, Merchant, Gender. User filters TransactionCategory = Travel, Entertainment, etc.
-    - User filters Merchant = Swiggy, GoIbibo etc.
-    - User filters Gender = Male / Female. When Gender = Male selected alone, Treemap shows only Diners Black and Millennia, Total Reward Points becomes 1M, Utilization 14.87%, Total Fees 4.34K.
-    - Bottom clustered column chart shows Total Spend by City and AgeGroup - dynamically filters to one city when selected.
-
-3.  **39:00 - 76:00 sec - TRANSACTIONS & RISK DETAIL:**
-    - Most critical page. Top KPIs: 111 Fraud Count, 54.80K Total Fees, 15.27 Utilization %, 2M Overdue Amount.
-    - Visual 1: Ribbon Chart - Total Spend by Year and TransactionCategory. Shows rank changes: In 2024 Groceries was Rank 1, in 2025 Groceries Rank 3 with -17,249 change (-22.98%).
-    - Visual 2: Funnel Chart - Fraud Count by City. Tooltip: "City Pune Fraud Count 20 Percent of first 100%". Then shows "City Bengaluru Fraud Count 18 Percent 90%", "City Delhi 5", "City Chennai TransactionCategory Fuel Overdue Amount 47,730".
-    - Visual 3: Treemap - Overdue Amount by City and TransactionCategory.
-    - Right-side filters: IsFraudFlag (0/1), CardLimit (100K to 1000000 range), AgeGroup (18-25 to 56+), PaymentStatus (Due, Overdue, Paid).
-    - In video, user filters IsFraudFlag = 1, CardLimit range, AgeGroup 46-55, 56+, PaymentStatus = Due/Overdue, and all visuals filter instantly. At end, Fraud Count goes from 111 to 21 to 9 to 4 to 2 based on filters.
-
-This video is the proof of interactivity.
 
 ---
 
@@ -132,8 +74,6 @@ This is the landing page for CXOs. Clean HDFC blue theme with illustration of a 
 3.  **Total Spend by TransactionCategory** - Horizontal Bar Chart. Categories sorted descending. Groceries is top in video.
 4.  **Total Transactions by PaymentStatus** - Donut Chart with 500 total center. Segments: Paid (Blue), Due (Light Blue), Overdue (Darker).
 
-**Interactivity shown in video:** Filter pane on right with Gender, CardType, City, Year. All KPI cards and charts are connected. Selecting CardType changes everything.
-
 ---
 
 ### PAGE 2: CUSTOMER & CARD ANALYTICS
@@ -150,9 +90,6 @@ Focuses on WHO is spending.
 3.  **Total Transactions by PaymentMode and TransactionCategory** - 100% Stacked Bar Chart. Shows for each category (Shopping, Bills, Fuel, Travel, Groceries, Food, Entertainment) what % is UPI vs Credit Card vs Net Banking.
 4.  **Total Spend by City and AgeGroup** - Clustered Column Chart. X-axis = City, Legends = AgeGroup, Y-axis = Total Spend. Shows Bengaluru, Delhi, Mumbai etc. each with age group bars.
 
-**Left Slicers in video:** TransactionCategory (with search), Merchant (with search), Gender (Male/Female). When user selects one, Treemap and Column chart filter.
-
-**Bottom Illustration:** Two HDFC credit cards (XXXX XXXX 1234) and a man with bar chart - branding.
 
 ---
 
@@ -175,13 +112,11 @@ Most important for Risk Team.
 
 3.  **Overdue Amount by City and TransactionCategory** - Treemap - Large blocks = high overdue. Video tooltip: "City Ahmedabad TransactionCategory Fuel Overdue Amount 54730", "City Chennai TransactionCategory Fuel", "City Hyderabad Fuel" etc. Shows which city+category combo is risky.
 
-**Interactivity shown:** At 0:50, filtering IsFraudFlag from All to 1 keeps 111. At 0:52, CardLimit slider filtered to lower limit makes Overdue Amount 561K and Total Fees 10.58K. At 1:00, AgeGroup 46-55 selected -> Fraud Count 21, Overdue 97K. At 1:03, AgeGroup 56+ -> Fraud 9, Overdue 50K. At 1:08, PaymentStatus = Overdue -> Fraud 4, at 1:11 PaymentStatus = Due -> Fraud 2. This shows dynamic risk filtering.
-
 ---
 
 ## 🎨 Design & UI - GitHub Template
 
-**Background Template:** I have a custom background template hosted on GitHub in `/assets/hdfc_background.png` and `/assets/hdfc_background_2.png`.
+**Background Template:** I have a custom background template hosted on GitHub in asset folder
 
 The template includes:
 - Light blue gradient background (#E6F0FF to #FFFFFF)
@@ -245,34 +180,6 @@ Insights you can mention on LinkedIn:
 
 ---
 
-## 📁 Project Structure
-
-```
-HDFC-Bank-Credit-Card-Dashboard/
-│
-├── assets/
-│   ├── hdfc_background.png (GitHub Template)
-│   ├── hdfc_background_2.png
-│   └── icons/
-│
-├── screenshots/
-│   ├── Executive_Overview.png
-│   ├── Customer_Analytics.png
-│   └── Risk_Detail.png
-│
-├── video/
-│   └── video_HDFC_working.mp4 (Interactive Walkthrough)
-│
-├── data/
-│   └── HDFC_Credit_Card_Dataset.csv
-│
-├── HDFC_Bank_Dashboard.pbix (Main Power BI File)
-├── README.md (This File)
-└── LICENSE
-```
-
----
-
 ## 🚀 How to Run This Project
 
 1.  Clone the repo:
@@ -282,18 +189,7 @@ HDFC-Bank-Credit-Card-Dashboard/
 2.  Open `HDFC_Bank_Dashboard.pbix` in Power BI Desktop
 3.  If background not loading, manually add from `assets/` folder: Insert > Image > Select background.png > Send to Back
 4.  Go to Transform Data to see Power Query steps
-5.  Press Ctrl + Click on visuals to see interactions
-6.  Play the video in `/video` folder to understand filtering logic
-
----
-
-## 📸 Screenshots
-
-> Add screenshots here after exporting from Power BI.
-
-- Executive Overview
-- Customer & Card Analytics  
-- Transactions & Risk Detail
+5.  Press Ctrl + Click on visuals to see interactionsc
 
 ---
 
@@ -304,22 +200,3 @@ HDFC-Bank-Credit-Card-Dashboard/
 - Connect to live SQL database instead of CSV
 - Add Mobile Layout view
 - Add Row Level Security (RLS) for City-wise managers
-
----
-
-## 👨‍💻 Author & Connect
-
-**Your Name** - Aspiring Data Analyst | Power BI Developer | Banking Analytics Enthusiast
-
-- LinkedIn: [linkedin.com/in/your-profile]
-- GitHub: [github.com/your-username]
-- Portfolio: [your-portfolio-link]
-
-If you liked this project, please give a ⭐ Star to this repo!
-
----
-
-### Hashtags for GitHub Topics
-`power-bi` `hdfc-bank` `credit-card-analytics` `banking-dashboard` `data-analytics` `fraud-detection` `business-intelligence` `dax` `data-visualization` `risk-analytics`
-
-
