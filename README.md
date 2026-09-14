@@ -136,33 +136,7 @@ This gives a premium banking dashboard look vs default Power BI.
 
 ---
 
-## 🧮 DAX Measures Used
-
-```dax
-Total Spend = SUM('HDFC_Data'[TotalSpend])
-
-Total Transactions = COUNT('HDFC_Data'[TransactionID])
-
-Avg Ticket Size = DIVIDE([Total Spend], [Total Transactions], 0)
-
-Overdue Amount = CALCULATE(SUM('HDFC_Data'[TotalDue]), 'HDFC_Data'[PaymentStatus] IN {"Due", "Overdue"})
-
-Collection Efficiency = DIVIDE( CALCULATE(COUNT('HDFC_Data'[TransactionID]), 'HDFC_Data'[PaymentStatus]="Paid"), [Total Transactions]) * 100
-
-Fraud Count = CALCULATE(COUNT('HDFC_Data'[TransactionID]), 'HDFC_Data'[IsFraudFlag]=1)
-
-Total Fees = SUM('HDFC_Data'[Fees])
-
-Utilization % = AVERAGE('HDFC_Data'[Utilization])
-
-Total Reward Points = SUM('HDFC_Data'[RewardPoints])
-```
-
----
-
-## 💡 Key Insights From Video
-
-Insights you can mention on LinkedIn:
+## 💡 Key Insights 
 
 1.  **Executive:** Spend is seasonal, dips in certain months, Collection Efficiency is around 30% and changes with city filter.
 2.  **Customer:** Male customers spend slightly more, Millennia card is the most used card by spend, Bengaluru and Delhi are top cities, 36-45 age group is highest spender.
