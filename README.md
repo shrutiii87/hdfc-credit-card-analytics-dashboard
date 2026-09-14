@@ -1,4 +1,4 @@
-# HDFC Bank Credit Card Analytics Dashboard | Power BI Project 💳📊
+# HDFC Bank Credit Card Analytics Dashboard 💳📊
 
 <img width="1200" height="420" alt="Hdfc-Credit-Card-Analytics-Animated" src="https://github.com/user-attachments/assets/99a97460-04e4-4fc9-9b54-4adcd90b36e1" />
 
