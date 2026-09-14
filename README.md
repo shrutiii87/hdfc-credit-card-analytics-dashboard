@@ -1,6 +1,5 @@
 # HDFC Bank Credit Card Analytics Dashboard | Power BI Project 💳📊
 
----
 
 ## 📌 Overview
 
@@ -55,7 +54,14 @@ This project is ideal for showcasing skills for **Data Analyst, Business Analyst
 
 ---
 
-## 📊 Dashboard Pages Deep Dive - From Video
+## 📊 Dashboard Pages Deep Dive 
+
+### Home page 
+
+<img width="960" height="540" alt="Home page" src="https://github.com/user-attachments/assets/7d7b8ef7-a59c-4759-b7af-16569e93d68e" />
+
+
+---
 
 ### PAGE 1: EXECUTIVE OVERVIEW
 
