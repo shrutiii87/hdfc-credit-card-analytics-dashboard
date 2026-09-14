@@ -59,6 +59,10 @@ This project is ideal for showcasing skills for **Data Analyst, Business Analyst
 
 ### PAGE 1: EXECUTIVE OVERVIEW
 
+<img width="1189" height="670" alt="image" src="https://github.com/user-attachments/assets/411c0b92-54c4-43bc-b533-e005398ebd6e" />
+
+---
+
 This is the landing page for CXOs. Clean HDFC blue theme with illustration of a man holding a card.
 
 **KPI Cards (Top Row):**
@@ -78,6 +82,11 @@ This is the landing page for CXOs. Clean HDFC blue theme with illustration of a 
 
 ### PAGE 2: CUSTOMER & CARD ANALYTICS
 
+<img width="1163" height="661" alt="image" src="https://github.com/user-attachments/assets/838367c2-9e23-49b4-81f0-0e3b83a2dd9f" />
+
+
+---
+
 Focuses on WHO is spending.
 
 **Top Navigation Icons:** Document, Card, Chart, Wallet - shows this is Customer section.
@@ -95,9 +104,13 @@ Focuses on WHO is spending.
 
 ### PAGE 3: TRANSACTIONS & RISK DETAIL
 
+<img width="1177" height="673" alt="image" src="https://github.com/user-attachments/assets/d2421f54-c318-4582-af3d-258184cfa452" />
+
+---
+
 Most important for Risk Team.
 
-**Top Filters (Video):** IsFraudFlag, CardLimit (range slider), AgeGroup, PaymentStatus
+**Top Filters:** IsFraudFlag, CardLimit (range slider), AgeGroup, PaymentStatus
 
 **KPI Cards:**
 - Fraud Count - 111 (COUNT where IsFraudFlag=1)
