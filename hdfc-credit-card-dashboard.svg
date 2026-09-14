@@ -1,546 +1,1101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="420"
+     viewBox="0 0 1200 420">
+
 <defs>
-  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#004B8D"/>
-    <stop offset="1" stop-color="#ED232A"/>
+
+  <!-- HDFC BLUE -->
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0066B3"/>
+    <stop offset="100%" stop-color="#003B73"/>
   </linearGradient>
 
-  <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#0057A8"/>
-    <stop offset="1" stop-color="#22A6F2"/>
+  <linearGradient id="redBlue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#ED1C24"/>
+    <stop offset="45%" stop-color="#ED1C24"/>
+    <stop offset="45%" stop-color="#0057A8"/>
+    <stop offset="100%" stop-color="#0057A8"/>
   </linearGradient>
 
-  <linearGradient id="purpleAccent" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#6D4AFF"/>
-    <stop offset="1" stop-color="#A78BFA"/>
+  <linearGradient id="cardShine" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#FFFFFF" stop-opacity=".18"/>
+    <stop offset="55%" stop-color="#FFFFFF" stop-opacity=".04"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
   </linearGradient>
 
-  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".12"/>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12"
+                  flood-color="#123B63" flood-opacity=".18"/>
   </filter>
 
-  <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
-    <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#0F172A" flood-opacity=".10"/>
+  <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="5" stdDeviation="7"
+                  flood-color="#123B63" flood-opacity=".13"/>
   </filter>
 
-  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-    <circle cx="2" cy="2" r="1.3" fill="#CBD5E1"/>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3"/>
+  </filter>
+
+  <pattern id="dots" width="18" height="18"
+           patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.1" fill="#AFC9DE"/>
   </pattern>
+
 </defs>
 
-<!-- WHITE BACKGROUND -->
-<rect width="1200" height="420" rx="28" fill="#FFFFFF"/>
 
-<!-- SUBTLE DECORATIVE AREAS -->
-<path d="M0 0H410V420H0Z" fill="#F8FAFC"/>
-<path d="M930 0H1200V420H930Z" fill="#F8FAFC"/>
+<!-- ===================================================== -->
+<!-- BACKGROUND -->
+<!-- ===================================================== -->
 
-<rect x="1010" y="35" width="135" height="135"
-      rx="24" fill="url(#dots)" opacity=".35"/>
+<rect width="1200" height="420" rx="26" fill="#FFFFFF"/>
 
-<circle cx="1090" cy="325" r="90"
-        fill="#EFF6FF"/>
+<path d="M0 300
+         C130 275 225 320 355 420
+         H0Z"
+      fill="#F1F7FB"/>
 
-<circle cx="1090" cy="325" r="58"
-        fill="none"
-        stroke="#DBEAFE"
-        stroke-width="1.5">
+<path d="M875 0
+         C1000 45 1080 25 1200 75
+         V0Z"
+      fill="#F4F9FC"/>
+
+<rect x="1030" y="35"
+      width="125" height="125"
+      rx="20"
+      fill="url(#dots)"
+      opacity=".30"/>
+
+
+<!-- FLOATING GEOMETRIC SHAPES -->
+
+<rect x="555" y="90"
+      width="285" height="285"
+      rx="45"
+      transform="rotate(32 697 232)"
+      fill="#EDF6FC">
+
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="32 697 232;36 697 232;32 697 232"
+    dur="8s"
+    repeatCount="indefinite"/>
+
+</rect>
+
+<circle cx="1090" cy="315"
+        r="43"
+        fill="#EFF7FC">
+
   <animate attributeName="r"
-           values="58;72;58"
+           values="43;52;43"
            dur="4s"
            repeatCount="indefinite"/>
-  <animate attributeName="opacity"
-           values=".8;.25;.8"
-           dur="4s"
-           repeatCount="indefinite"/>
+
 </circle>
 
-<!-- TOP ACCENT -->
-<rect x="52" y="38" width="72" height="5" rx="3" fill="#ED232A"/>
-<rect x="124" y="38" width="72" height="5" rx="3" fill="#004B8D"/>
+<circle cx="935" cy="75"
+        r="12"
+        fill="#1DB8C7">
 
-<!-- LEFT CONTENT -->
-<text x="52" y="76"
+  <animate attributeName="cy"
+           values="75;62;75"
+           dur="3s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="opacity"
+           values=".5;1;.5"
+           dur="3s"
+           repeatCount="indefinite"/>
+
+</circle>
+
+
+<!-- ===================================================== -->
+<!-- HDFC LOGO -->
+<!-- ===================================================== -->
+
+<g transform="translate(55 35)">
+
+  <g>
+    <rect x="0" y="0"
+          width="36" height="36"
+          fill="none"
+          stroke="#ED232A"
+          stroke-width="7"/>
+
+    <rect x="10" y="10"
+          width="16" height="16"
+          fill="#0057A8"/>
+
+    <rect x="14" y="14"
+          width="8" height="8"
+          fill="#FFFFFF"/>
+  </g>
+
+  <text x="50" y="29"
+        font-family="Arial,sans-serif"
+        font-size="37"
+        font-weight="900"
+        letter-spacing="-1.5"
+        fill="#07396D">
+    HDFC BANK
+  </text>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- LEFT TITLE -->
+<!-- ===================================================== -->
+
+<text x="58" y="112"
       font-family="Arial,sans-serif"
       font-size="12"
       font-weight="800"
-      letter-spacing="3"
-      fill="#004B8D">HDFC BANK • POWER BI</text>
+      letter-spacing="2.5"
+      fill="#0057A8">
+  POWER BI • FINANCIAL ANALYTICS
+</text>
 
-<text x="52" y="123"
+<text x="58" y="157"
       font-family="Arial,sans-serif"
-      font-size="37"
-      font-weight="800"
-      fill="#0F172A">Credit Card</text>
+      font-size="36"
+      font-weight="900"
+      fill="#082F5B">
+  Credit Card
+</text>
 
-<text x="52" y="164"
+<text x="58" y="198"
       font-family="Arial,sans-serif"
-      font-size="37"
-      font-weight="800"
-      fill="#004B8D">Analytics</text>
+      font-size="36"
+      font-weight="900"
+      fill="#082F5B">
+  Spending &
+</text>
 
-<text x="52" y="196"
+<text x="58" y="239"
       font-family="Arial,sans-serif"
-      font-size="17"
-      font-weight="500"
-      fill="#64748B">Turning transaction data into</text>
+      font-size="36"
+      font-weight="900"
+      fill="#0057A8">
+  Risk Analytics
+</text>
 
-<text x="52" y="220"
+<text x="58" y="266"
       font-family="Arial,sans-serif"
-      font-size="17"
+      font-size="15"
+      fill="#46647D">
+  Customer spending • transactions • utilization
+</text>
+
+<text x="58" y="288"
+      font-family="Arial,sans-serif"
+      font-size="15"
       font-weight="600"
-      fill="#334155">business insights.</text>
+      fill="#46647D">
+  Business intelligence dashboard
+</text>
 
-<!-- MINI INSIGHT -->
-<g transform="translate(52 250)" filter="url(#softShadow)">
-  <rect width="310"
-        height="78"
-        rx="16"
+
+<!-- ===================================================== -->
+<!-- LEFT ANALYTICS CARD -->
+<!-- ===================================================== -->
+
+<g transform="translate(58 315)"
+   filter="url(#smallShadow)">
+
+  <rect width="330" height="58"
+        rx="14"
         fill="#FFFFFF"
-        stroke="#E2E8F0"/>
+        stroke="#D7E6F1"/>
 
-  <rect width="5"
-        height="78"
+  <!-- animated red/blue accent -->
+  <rect x="0" y="0"
+        width="5" height="58"
         rx="2.5"
-        fill="url(#accent)"/>
+        fill="url(#redBlue)">
 
-  <text x="22" y="25"
-        font-family="Arial"
-        font-size="9"
-        font-weight="700"
-        letter-spacing="1.5"
-        fill="#94A3B8">ANALYTICS FLOW</text>
+    <animate attributeName="height"
+             values="58;35;58"
+             dur="2.5s"
+             repeatCount="indefinite"/>
 
-  <text x="22" y="49"
-        font-family="Arial"
-        font-size="12"
-        font-weight="700"
-        fill="#0F172A">DATA</text>
+  </rect>
 
-  <text x="72" y="49"
-        font-family="Arial"
-        font-size="12"
-        fill="#94A3B8">→</text>
+  <!-- DATA -->
 
-  <text x="91" y="49"
-        font-family="Arial"
-        font-size="12"
-        font-weight="700"
-        fill="#0057A8">MODEL</text>
+  <circle cx="25" cy="29"
+          r="10"
+          fill="#E7F3FB"/>
 
-  <text x="146" y="49"
-        font-family="Arial"
-        font-size="12"
-        fill="#94A3B8">→</text>
+  <path d="M20 32 L25 26 L29 29 L34 22"
+        fill="none"
+        stroke="#0057A8"
+        stroke-width="2"
+        stroke-linecap="round">
 
-  <text x="165" y="49"
-        font-family="Arial"
-        font-size="12"
-        font-weight="700"
-        fill="#6D4AFF">DASHBOARD</text>
-
-  <text x="248" y="49"
-        font-family="Arial"
-        font-size="12"
-        fill="#94A3B8">→</text>
-
-  <text x="266" y="49"
-        font-family="Arial"
-        font-size="12"
-        font-weight="700"
-        fill="#059669">INSIGHT</text>
-</g>
-
-<!-- RIGHT DASHBOARD AREA -->
-<g transform="translate(430 42)" filter="url(#shadow)">
-
-  <!-- MAIN WHITE PANEL -->
-  <rect width="715"
-        height="326"
-        rx="24"
-        fill="#FFFFFF"
-        stroke="#E2E8F0"
-        stroke-width="1.5"/>
-
-  <!-- PANEL HEADER -->
-  <text x="28" y="34"
-        font-family="Arial"
-        font-size="9"
-        font-weight="700"
-        letter-spacing="2"
-        fill="#94A3B8">CREDIT CARD PERFORMANCE</text>
-
-  <text x="28" y="61"
-        font-family="Arial"
-        font-size="21"
-        font-weight="800"
-        fill="#0F172A">Customer &amp; Spend Overview</text>
-
-  <rect x="580" y="20"
-        width="105"
-        height="32"
-        rx="16"
-        fill="#EFF6FF"
-        stroke="#BFDBFE"/>
-
-  <circle cx="598" cy="36"
-          r="4"
-          fill="#16A34A">
-    <animate attributeName="opacity"
-             values="1;.3;1"
+    <animate attributeName="stroke-width"
+             values="2;3;2"
              dur="1.5s"
              repeatCount="indefinite"/>
-  </circle>
 
-  <text x="610" y="40"
+  </path>
+
+  <text x="45" y="23"
         font-family="Arial"
-        font-size="9"
+        font-size="8"
         font-weight="700"
-        fill="#2563EB">LIVE DATA</text>
+        fill="#7891A6">
+    SPEND
+  </text>
 
-  <!-- KPI CARDS -->
-  <g transform="translate(28 80)">
+  <text x="45" y="42"
+        font-family="Arial"
+        font-size="13"
+        font-weight="900"
+        fill="#082F5B">
+    ₹4.2M
+  </text>
 
-    <!-- REVENUE -->
-    <rect width="150"
-          height="74"
-          rx="15"
-          fill="#F8FAFC"
-          stroke="#E2E8F0"/>
 
-    <circle cx="24" cy="25"
-            r="13"
-            fill="#E0F2FE"/>
+  <!-- DIVIDER -->
 
-    <text x="24" y="29"
-          text-anchor="middle"
-          font-family="Arial"
-          font-size="10"
-          font-weight="800"
-          fill="#0369A1">₹</text>
+  <line x1="120" y1="14"
+        x2="120" y2="44"
+        stroke="#E1ECF4"/>
 
-    <text x="48" y="24"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#94A3B8">REVENUE</text>
-
-    <text x="48" y="47"
-          font-family="Arial"
-          font-size="17"
-          font-weight="800"
-          fill="#0F172A">₹4.2M</text>
-
-    <text x="48" y="62"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#16A34A">+12.4%</text>
-  </g>
 
   <!-- TRANSACTIONS -->
-  <g transform="translate(190 80)">
-    <rect width="150"
-          height="74"
-          rx="15"
-          fill="#F8FAFC"
-          stroke="#E2E8F0"/>
 
-    <circle cx="24" cy="25"
-            r="13"
-            fill="#E0E7FF"/>
+  <circle cx="145" cy="29"
+          r="10"
+          fill="#E7F3FB"/>
 
-    <path d="M18 25h12M21 20l-5 5 5 5"
+  <path d="M140 25H150M140 30H150M140 35H147"
+        stroke="#0057A8"
+        stroke-width="1.6"/>
+
+  <text x="165" y="23"
+        font-family="Arial"
+        font-size="8"
+        font-weight="700"
+        fill="#7891A6">
+    TRANSACTIONS
+  </text>
+
+  <text x="165" y="42"
+        font-family="Arial"
+        font-size="13"
+        font-weight="900"
+        fill="#082F5B">
+    18.4K
+  </text>
+
+
+  <!-- DIVIDER -->
+
+  <line x1="270" y1="14"
+        x2="270" y2="44"
+        stroke="#E1ECF4"/>
+
+
+  <!-- RISK -->
+
+  <circle cx="295" cy="29"
+          r="10"
+          fill="#FFF0F0">
+
+    <animate attributeName="r"
+             values="10;12;10"
+             dur="2s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+  <text x="295" y="33"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10"
+        font-weight="900"
+        fill="#ED232A">
+    %
+  </text>
+
+  <text x="310" y="23"
+        font-family="Arial"
+        font-size="8"
+        font-weight="700"
+        fill="#7891A6">
+    RISK
+  </text>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- MAIN CREDIT CARD -->
+<!-- ===================================================== -->
+
+<g filter="url(#shadow)">
+
+  <!-- card floating motion -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0 0;0 -7;0 0;0 5;0 0"
+    dur="6s"
+    repeatCount="indefinite"/>
+
+  <rect x="510" y="105"
+        width="300" height="190"
+        rx="20"
+        fill="#003568"/>
+
+  <rect x="510" y="95"
+        width="300" height="190"
+        rx="20"
+        fill="url(#blue)"/>
+
+
+  <!-- CARD SHINE SWEEP -->
+
+  <rect x="475" y="70"
+        width="80"
+        height="260"
+        fill="url(#cardShine)"
+        transform="rotate(20 515 200)"
+        opacity="0">
+
+    <animate attributeName="x"
+             values="475;790;475"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="opacity"
+             values="0;.8;0"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- LOGO -->
+
+  <g transform="translate(535 118)">
+
+    <rect width="30"
+          height="30"
           fill="none"
-          stroke="#4F46E5"
-          stroke-width="1.8"/>
+          stroke="#ED232A"
+          stroke-width="6"/>
 
-    <text x="48" y="24"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#94A3B8">TRANSACTIONS</text>
+    <rect x="8" y="8"
+          width="14" height="14"
+          fill="#FFFFFF"/>
 
-    <text x="48" y="47"
-          font-family="Arial"
-          font-size="17"
-          font-weight="800"
-          fill="#0F172A">18.4K</text>
+    <rect x="11" y="11"
+          width="8" height="8"
+          fill="#0057A8"/>
 
-    <text x="48" y="62"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#16A34A">+8.7%</text>
   </g>
 
-  <!-- CUSTOMERS -->
-  <g transform="translate(352 80)">
-    <rect width="150"
-          height="74"
-          rx="15"
-          fill="#F8FAFC"
-          stroke="#E2E8F0"/>
+  <text x="577" y="143"
+        font-family="Arial"
+        font-size="22"
+        font-weight="900"
+        fill="#FFFFFF">
+    HDFC BANK
+  </text>
 
-    <circle cx="24" cy="25"
-            r="13"
-            fill="#ECFDF5"/>
 
-    <circle cx="24" cy="22"
-            r="4"
-            fill="none"
-            stroke="#059669"
-            stroke-width="1.7"/>
+  <!-- CHIP -->
 
-    <path d="M17 33c1-5 13-5 14 0"
+  <g transform="translate(540 177)">
+
+    <rect width="52"
+          height="38"
+          rx="9"
+          fill="#F4D47D"
+          stroke="#D0A845"/>
+
+    <path d="M8 12H44
+             M8 25H44
+             M20 3V35
+             M32 3V35"
           fill="none"
-          stroke="#059669"
-          stroke-width="1.7"/>
+          stroke="#B7892D"
+          stroke-width="1"/>
 
-    <text x="48" y="24"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#94A3B8">CUSTOMERS</text>
-
-    <text x="48" y="47"
-          font-family="Arial"
-          font-size="17"
-          font-weight="800"
-          fill="#0F172A">9.2K</text>
-
-    <text x="48" y="62"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#16A34A">+5.2%</text>
   </g>
 
-  <!-- UTILIZATION -->
-  <g transform="translate(514 80)">
-    <rect width="145"
-          height="74"
-          rx="15"
-          fill="#F8FAFC"
-          stroke="#E2E8F0"/>
 
-    <circle cx="24" cy="25"
-            r="13"
-            fill="#F3E8FF"/>
+  <!-- CONTACTLESS -->
 
-    <path d="M17 27a7 7 0 0 1 14 0"
-          fill="none"
-          stroke="#7C3AED"
-          stroke-width="2"/>
+  <g fill="none"
+     stroke="#FFFFFF"
+     stroke-width="2"
+     opacity=".8">
 
-    <circle cx="24" cy="27" r="2"
-            fill="#7C3AED"/>
+    <path d="M612 186 Q625 196 612 207"/>
+    <path d="M620 181 Q639 196 620 212"/>
+    <path d="M628 177 Q651 196 628 216"/>
 
-    <text x="48" y="24"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#94A3B8">UTILIZATION</text>
+    <animate attributeName="opacity"
+             values=".35;1;.35"
+             dur="2s"
+             repeatCount="indefinite"/>
 
-    <text x="48" y="47"
-          font-family="Arial"
-          font-size="17"
-          font-weight="800"
-          fill="#0F172A">32%</text>
-
-    <text x="48" y="62"
-          font-family="Arial"
-          font-size="8"
-          font-weight="700"
-          fill="#7C3AED">OPTIMAL</text>
   </g>
 
-  <!-- CHART PANEL -->
-  <g transform="translate(28 174)">
 
-    <rect width="425"
-          height="126"
-          rx="16"
+  <!-- CARD NUMBER -->
+
+  <text x="540" y="243"
+        font-family="Arial"
+        font-size="18"
+        font-weight="600"
+        letter-spacing="3"
+        fill="#FFFFFF">
+    •••• •••• •••• 1234
+  </text>
+
+
+  <text x="540" y="263"
+        font-family="Arial"
+        font-size="7"
+        font-weight="600"
+        fill="#C9E3F7">
+    VALID THRU
+  </text>
+
+  <text x="578" y="263"
+        font-family="Arial"
+        font-size="12"
+        font-weight="700"
+        fill="#FFFFFF">
+    08/29
+  </text>
+
+  <text x="705" y="263"
+        font-family="Arial"
+        font-size="11"
+        font-weight="700"
+        fill="#FFFFFF">
+    CREDIT
+  </text>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- FLOATING SMALL CARD -->
+<!-- ===================================================== -->
+
+<g filter="url(#smallShadow)">
+
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="820 100;820 88;820 100"
+    dur="4.5s"
+    repeatCount="indefinite"/>
+
+  <rect x="820" y="100"
+        width="142" height="88"
+        rx="10"
+        fill="#FFFFFF"
+        stroke="#D5E5F0"/>
+
+  <rect x="827" y="107"
+        width="128" height="74"
+        rx="8"
+        fill="#0862A9"/>
+
+  <text x="837" y="125"
+        font-family="Arial"
+        font-size="8"
+        font-weight="900"
+        fill="#FFFFFF">
+    HDFC BANK
+  </text>
+
+  <rect x="837" y="133"
+        width="24"
+        height="16"
+        rx="4"
+        fill="#F5D987"/>
+
+  <text x="837" y="165"
+        font-family="Arial"
+        font-size="8"
+        font-weight="700"
+        fill="#FFFFFF">
+    XXXX XXXX 1234
+  </text>
+
+  <text x="926" y="168"
+        font-family="Arial"
+        font-size="6"
+        font-weight="700"
+        fill="#D5E8F8">
+    CREDIT
+  </text>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- SPEND TREND PANEL -->
+<!-- ===================================================== -->
+
+<g transform="translate(840 215)"
+   filter="url(#smallShadow)">
+
+  <rect width="145"
+        height="90"
+        rx="16"
+        fill="#FFFFFF"
+        stroke="#D9E8F2"/>
+
+  <text x="15" y="22"
+        font-family="Arial"
+        font-size="8"
+        font-weight="800"
+        letter-spacing="1"
+        fill="#7891A6">
+    SPEND TREND
+  </text>
+
+
+  <!-- GRID -->
+
+  <line x1="15" y1="70"
+        x2="130" y2="70"
+        stroke="#E4EDF4"/>
+
+  <line x1="15" y1="48"
+        x2="130" y2="48"
+        stroke="#E4EDF4"/>
+
+
+  <!-- AREA -->
+
+  <path d="M18 65
+           L38 57
+           L58 61
+           L78 42
+           L98 49
+           L118 30
+           L128 35
+           L128 70
+           L18 70Z"
+        fill="#DCECF8">
+
+    <animate attributeName="opacity"
+             values=".35;.9;.35"
+             dur="3s"
+             repeatCount="indefinite"/>
+
+  </path>
+
+
+  <!-- ANIMATED LINE -->
+
+  <path d="M18 65
+           L38 57
+           L58 61
+           L78 42
+           L98 49
+           L118 30
+           L128 35"
+        fill="none"
+        stroke="#0057A8"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray="300"
+        stroke-dashoffset="300">
+
+    <animate attributeName="stroke-dashoffset"
+             values="300;0;300"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+  </path>
+
+
+  <!-- DATA POINTS -->
+
+  <g fill="#FFFFFF"
+     stroke="#0057A8"
+     stroke-width="2">
+
+    <circle cx="18" cy="65" r="3"/>
+
+    <circle cx="38" cy="57" r="3"/>
+
+    <circle cx="58" cy="61" r="3"/>
+
+    <circle cx="78" cy="42" r="3"/>
+
+    <circle cx="98" cy="49" r="3"/>
+
+    <circle cx="118" cy="30" r="4">
+
+      <animate attributeName="r"
+               values="3;7;3"
+               dur="1.4s"
+               repeatCount="indefinite"/>
+
+    </circle>
+
+    <circle cx="128" cy="35" r="3"/>
+
+  </g>
+
+
+  <!-- SCANNING LINE -->
+
+  <line x1="18" y1="27"
+        x2="18" y2="70"
+        stroke="#ED232A"
+        stroke-width="1.5"
+        opacity="0">
+
+    <animate attributeName="x1"
+             values="18;128;18"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="x2"
+             values="18;128;18"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="opacity"
+             values="0;.8;0"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+  </line>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- ANALYTICS FLOW -->
+<!-- ===================================================== -->
+
+<g transform="translate(835 325)">
+
+  <!-- DATA -->
+
+  <g>
+
+    <rect width="35"
+          height="35"
+          rx="5"
           fill="#FFFFFF"
-          stroke="#E2E8F0"/>
+          stroke="#BBD3E5"/>
 
-    <text x="18" y="25"
+    <path d="M9 11H26
+             M9 17H26
+             M9 23H21"
+          stroke="#0057A8"
+          stroke-width="2"
+          stroke-linecap="round"/>
+
+    <text x="17" y="50"
+          text-anchor="middle"
           font-family="Arial"
-          font-size="10"
-          font-weight="800"
-          fill="#334155">Monthly Spend Trend</text>
+          font-size="7"
+          font-weight="700"
+          fill="#46647D">
+      DATA
+    </text>
 
-    <text x="18" y="42"
-          font-family="Arial"
-          font-size="8"
-          fill="#94A3B8">Transaction value • Last 6 months</text>
+  </g>
 
-    <!-- GRID -->
-    <g stroke="#E2E8F0"
-       stroke-width="1">
-      <line x1="18" y1="62" x2="407" y2="62"/>
-      <line x1="18" y1="84" x2="407" y2="84"/>
-      <line x1="18" y1="106" x2="407" y2="106"/>
-    </g>
 
-    <!-- AREA -->
-    <path d="M25 101
-             L85 91
-             L145 96
-             L205 75
-             L265 82
-             L325 58
-             L390 66
-             L390 108
-             L25 108Z"
-          fill="#DBEAFE"
-          opacity=".55"/>
+  <!-- ARROW -->
 
-    <!-- LINE -->
-    <path d="M25 101
-             L85 91
-             L145 96
-             L205 75
-             L265 82
-             L325 58
-             L390 66"
-          fill="none"
+  <text x="47" y="23"
+        font-family="Arial"
+        font-size="18"
+        font-weight="700"
+        fill="#9BB8CC">
+    →
+  </text>
+
+
+  <!-- ANALYZE -->
+
+  <g transform="translate(70 0)">
+
+    <rect width="35"
+          height="35"
+          rx="5"
+          fill="#FFFFFF"
+          stroke="#BBD3E5"/>
+
+    <path d="M8 27V20
+             M16 27V14
+             M24 27V9"
           stroke="#0057A8"
           stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"/>
+          stroke-linecap="round"/>
 
-    <!-- DATA POINTS -->
-    <g fill="#FFFFFF"
-       stroke="#0057A8"
-       stroke-width="2">
-      <circle cx="25" cy="101" r="4"/>
-      <circle cx="85" cy="91" r="4"/>
-      <circle cx="145" cy="96" r="4"/>
-      <circle cx="205" cy="75" r="4"/>
-      <circle cx="265" cy="82" r="4"/>
-      <circle cx="325" cy="58" r="4"/>
-      <circle cx="390" cy="66" r="4">
-        <animate attributeName="r"
-                 values="4;6;4"
-                 dur="1.8s"
-                 repeatCount="indefinite"/>
-      </circle>
-    </g>
+    <path d="M7 28H29"
+          stroke="#0057A8"
+          stroke-width="1.5"/>
 
-    <!-- MONTH LABELS -->
-    <g font-family="Arial"
-       font-size="7"
-       fill="#94A3B8">
-      <text x="20" y="120">APR</text>
-      <text x="80" y="120">MAY</text>
-      <text x="140" y="120">JUN</text>
-      <text x="200" y="120">JUL</text>
-      <text x="260" y="120">AUG</text>
-      <text x="320" y="120">SEP</text>
-      <text x="385" y="120">OCT</text>
-    </g>
+    <!-- animated bars -->
+
+    <rect x="8" y="20"
+          width="4" height="7"
+          fill="#0057A8">
+
+      <animate attributeName="height"
+               values="7;13;7"
+               dur="1.5s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="y"
+               values="20;14;20"
+               dur="1.5s"
+               repeatCount="indefinite"/>
+
+    </rect>
+
   </g>
 
-  <!-- INSIGHT PANEL -->
-  <g transform="translate(468 174)">
-
-    <rect width="191"
-          height="126"
-          rx="16"
-          fill="#F8FAFC"
-          stroke="#E2E8F0"/>
-
-    <text x="18" y="25"
-          font-family="Arial"
-          font-size="9"
-          font-weight="800"
-          letter-spacing="1"
-          fill="#64748B">KEY INSIGHT</text>
-
-    <circle cx="22" cy="48"
-            r="12"
-            fill="#EFF6FF"/>
-
-    <path d="M18 49l3 3 6-8"
-          fill="none"
-          stroke="#2563EB"
-          stroke-width="2"/>
-
-    <text x="42" y="48"
-          font-family="Arial"
-          font-size="10"
-          font-weight="700"
-          fill="#0F172A">Spend is trending</text>
-
-    <text x="42" y="62"
-          font-family="Arial"
-          font-size="10"
-          font-weight="700"
-          fill="#0057A8">upward.</text>
-
-    <line x1="18" y1="76"
-          x2="173" y2="76"
-          stroke="#E2E8F0"/>
-
-    <text x="18" y="94"
-          font-family="Arial"
-          font-size="8"
-          fill="#64748B">Highest growth</text>
-
-    <text x="18" y="110"
-          font-family="Arial"
-          font-size="14"
-          font-weight="800"
-          fill="#0F172A">+12.4%</text>
-
-    <text x="92" y="110"
-          font-family="Arial"
-          font-size="8"
-          fill="#16A34A">MoM</text>
-  </g>
-</g>
-
-<!-- BOTTOM RIGHT DECORATION -->
-<g transform="translate(1060 350)">
-  <circle cx="0" cy="0" r="7"
-          fill="#004B8D">
-    <animate attributeName="r"
-             values="7;10;7"
-             dur="2s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="0" cy="0" r="17"
-          fill="none"
-          stroke="#93C5FD"
-          stroke-width="1"
-          opacity=".6">
-    <animate attributeName="r"
-             values="17;27;17"
-             dur="2s"
-             repeatCount="indefinite"/>
-    <animate attributeName="opacity"
-             values=".6;0;.6"
-             dur="2s"
-             repeatCount="indefinite"/>
-  </circle>
-</g>
-
-<!-- SMALL BRAND MARK -->
-<g transform="translate(1082 382)">
-  <rect width="52"
-        height="20"
-        rx="10"
-        fill="#F1F5F9"/>
-
-  <text x="26" y="14"
+  <text x="87" y="50"
         text-anchor="middle"
         font-family="Arial"
         font-size="7"
-        font-weight="800"
-        letter-spacing=".8"
-        fill="#475569">PBI</text>
+        font-weight="700"
+        fill="#46647D">
+    ANALYZE
+  </text>
+
+
+  <!-- ARROW -->
+
+  <text x="118" y="23"
+        font-family="Arial"
+        font-size="18"
+        font-weight="700"
+        fill="#9BB8CC">
+    →
+  </text>
+
+
+  <!-- INSIGHT -->
+
+  <g transform="translate(140 0)">
+
+    <circle cx="17"
+            cy="17"
+            r="17"
+            fill="#EDF7FC"
+            stroke="#BBDFF0"/>
+
+    <circle cx="17"
+            cy="17"
+            r="11"
+            fill="none"
+            stroke="#16A36A"
+            stroke-width="1"
+            opacity=".3">
+
+      <animate attributeName="r"
+               values="8;16;8"
+               dur="2s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values=".7;0;.7"
+               dur="2s"
+               repeatCount="indefinite"/>
+
+    </circle>
+
+    <path d="M9 19
+             L15 24
+             L26 11"
+          fill="none"
+          stroke="#16A36A"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="30"
+          stroke-dashoffset="30">
+
+      <animate attributeName="stroke-dashoffset"
+               values="30;0;30"
+               dur="2.5s"
+               repeatCount="indefinite"/>
+
+    </path>
+
+  </g>
+
+  <text x="157" y="50"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="7"
+        font-weight="700"
+        fill="#46647D">
+    INSIGHT
+  </text>
+
 </g>
+
+
+<!-- ===================================================== -->
+<!-- PIE CHART DECORATION -->
+<!-- ===================================================== -->
+
+<g transform="translate(475 65)">
+
+  <circle cx="0" cy="0"
+          r="25"
+          fill="#E8F3FB"/>
+
+  <path d="M0 -25
+           A25 25 0 0 1 23 10
+           L0 0Z"
+        fill="#BFDDF0"/>
+
+  <path d="M0 0
+           L0 -25
+           A25 25 0 0 0 -24 7
+           Z"
+        fill="#D5E9F7"/>
+
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="0 475 65;360 475 65"
+    dur="14s"
+    repeatCount="indefinite"/>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- BAR CHART DECORATION -->
+<!-- ===================================================== -->
+
+<g transform="translate(1000 185)">
+
+  <line x1="0" y1="35"
+        x2="55" y2="35"
+        stroke="#B5D0E4"
+        stroke-width="2"/>
+
+  <rect x="5" y="20"
+        width="7" height="15"
+        fill="#A9CDE7">
+
+    <animate attributeName="height"
+             values="15;23;15"
+             dur="1.8s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="y"
+             values="20;12;20"
+             dur="1.8s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+  <rect x="18" y="12"
+        width="7" height="23"
+        fill="#72AED3">
+
+    <animate attributeName="height"
+             values="23;15;23"
+             dur="2s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="y"
+             values="12;20;12"
+             dur="2s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+  <rect x="31" y="6"
+        width="7" height="29"
+        fill="#0057A8">
+
+    <animate attributeName="height"
+             values="29;20;29"
+             dur="2.2s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="y"
+             values="6;15;6"
+             dur="2.2s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+  <rect x="44" y="16"
+        width="7" height="19"
+        fill="#ED232A">
+
+    <animate attributeName="height"
+             values="19;29;19"
+             dur="1.6s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="y"
+             values="16;6;16"
+             dur="1.6s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- FLOATING DATA PARTICLES -->
+<!-- ===================================================== -->
+
+<g fill="#20B8C7">
+
+  <circle cx="450" cy="350" r="3">
+
+    <animate attributeName="cy"
+             values="350;330;350"
+             dur="3s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="opacity"
+             values=".2;1;.2"
+             dur="3s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+  <circle cx="795" cy="65" r="3">
+
+    <animate attributeName="cy"
+             values="65;50;65"
+             dur="2.8s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+  <circle cx="1005" cy="345" r="4">
+
+    <animate attributeName="cx"
+             values="1005;1022;1005"
+             dur="3.5s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- LIVE DATA SIGNAL -->
+<!-- ===================================================== -->
+
+<g transform="translate(1040 350)">
+
+  <circle cx="0" cy="0"
+          r="6"
+          fill="#ED232A"/>
+
+  <circle cx="0" cy="0"
+          r="15"
+          fill="none"
+          stroke="#ED232A"
+          stroke-width="1"
+          opacity=".5">
+
+    <animate attributeName="r"
+             values="10;28;10"
+             dur="2.5s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="opacity"
+             values=".6;0;.6"
+             dur="2.5s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+  <circle cx="0" cy="0"
+          r="25"
+          fill="none"
+          stroke="#BBDDF0"
+          stroke-width="1"
+          stroke-dasharray="3 6">
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0;360"
+      dur="7s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<text x="1045" y="395"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="8"
+      font-weight="800"
+      letter-spacing="1.5"
+      fill="#7993A8">
+  HDFC BANK • BUSINESS INTELLIGENCE
+</text>
+
+
+<!-- RED / BLUE ANIMATED ACCENT -->
+
+<rect x="58" y="390"
+      width="48"
+      height="4"
+      rx="2"
+      fill="#ED232A">
+
+  <animate attributeName="width"
+           values="48;85;48"
+           dur="2.5s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+<rect x="106" y="390"
+      width="48"
+      height="4"
+      rx="2"
+      fill="#0057A8">
+
+  <animate attributeName="width"
+           values="48;25;48"
+           dur="2.5s"
+           repeatCount="indefinite"/>
+
+</rect>
 
 </svg>
